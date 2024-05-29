@@ -1,0 +1,150 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: "Freeman", sans-serif;
+    background-color: rgb(163, 12, 128);
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 900px;
+    height: 700px;
+    display: grid;
+    grid-template-areas: 
+    "left right";
+    grid-template-columns: 1fr 1.1fr;
+    justify-content: center;
+    background-color: rgb(39, 16, 80);
+    border-radius: 20px;
+    column-gap: 60px; 
+    padding: 60px;
+}
+
+.title {
+    color: white;
+    margin-bottom: 35px
+}
+
+.title-span-color {
+    color: rgb(243, 59, 90);
+}
+
+.left-side-container {
+    display:flex;
+    flex-direction: column;
+}
+
+.button-info, .email-info {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    color: white;
+    line-height: 70px;
+    background-color: rgb(39, 16, 80);
+    border:none;
+    gap: 10px;
+}
+
+.social-media-icons-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.social-media-icons {
+display: flex;
+align-items: flex-end;
+background-color: rgb(39, 16, 80);
+border: none;
+}
+
+.right-side-container {
+    width: 400px;
+    height: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+}
+
+.header {
+    color: rgb(39, 16, 80);
+    margin-bottom: 30px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom:30px;
+}
+
+li {
+    list-style-type: none;
+    list-style-position: none;
+}
+
+input[type="checkbox"]:not(:checked),
+input[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999%
+}
+
+input[type="checkbox"] + label {
+    display: grid;
+    padding: 10px 10px;
+    cursor: pointer;
+    border: 1px solid rgb(186, 182, 184);
+    color: rgb(186, 182, 184);
+    background-color: white;
+    border-radius: 5px;
+}
+
+input[type="checkbox"]:checked + label {
+    border: 1px solid white;
+    color: white;
+    background-color: rgb(187, 0, 131);
+  }
+
+.form {
+    display: grid;
+    gap: 20px;
+}
+
+
+input {
+    border: none;
+    border-bottom: 3px solid rgb(219, 207, 213);
+    background-color: white;
+    padding-bottom: 5px;
+       
+}
+
+::placeholder {
+    color:rgb(186, 182, 184);
+}
+
+.button-container {
+    margin-top:auto;
+}
+
+.button {
+    background-color: rgb(187, 0, 131);
+    padding: 15px 40px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 400;
+}
